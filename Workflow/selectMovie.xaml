@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="selectMovie" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="selectMovie_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="selectMovie" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="selectMovie_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -25,6 +25,16 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -50,13 +60,72 @@
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="selectMovie" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="selectMovie" sap:VirtualizedContainerService.HintSize="720,522" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Letterboxd • Social film discovery.(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,499" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e361781a-0bd3-4ce1-9690-b45da42c6a0c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,305" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,241" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="e361781a-0bd3-4ce1-9690-b45da42c6a0c" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;webctrl class='replace' tag='A' /&gt;" Guid="5e5413da-745a-45af-be47-ee67d06eef18" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Letterboxd • Social film discovery.' /&gt;" SearchSteps="Selector" Version="V6" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" ContentHash="Fq6xZn_vAU2hYZ4_Bu8GwQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATWSURBVHhe7ZtviBRlHMfH/gmV5pveiS/qRRiJgkVSYLe7M9tVEFk+sx7oebvdzbOHitpZ5OntXZJHqW0QghwWIXHZvxf5hxKtu0AJPcMXB6ei5AYn4eWeYYkhdvuT3+zOtPv8Rm9ndud27p6+8IFl5vnz+87sM/PM75lRFJ/1Alvz8PN68jWN8ZTKjF6N8ZOazjMq41mNGTcQ87fOM7ivUCaFdbCu2N6kUJS1LtQY/0BlxqDKjJzKDPAI1h3EtrBNsZ9A6eXEWzM03WhTGR9yMFIl+BD2gX2J/ddMrzStmxXVk12azq/QgP0B+8I+sW8xngkTAExTYzyuMeMPMcCJwuw7xuMYixifr1KZMUfT+TExoFpRiGWOGKcv0vTksxrjI2IQtQZjwtjEeKuqqJ5M5G9bNIAggLFhjGLcFYuxr+5WdSMtdhhYdCONMYs+PAkb0pixj3QScDDmqhyESXXmRXQjLfpxJRxPpNFJhudrQv5qH9wLXrmYzxtu7w7mfT6AtzqvFLyUN0/AWVWQJjnVAj2VNWPEqaVYecoQ43HRb4nw4aKWc3u/QW93fIDCJyyx0lQDPYq+TeWf5yfukbZWoEfHfEI+mUErTEXQq+hf8TeTEzT4UIl5zLfRQpSo3gzJxlehIxGF91vqYGO8HhLLGSk3HotXtsDCt+PwRHeTCf7GbWK5cTE6IPJGGsKbd0P4zY8g0roFr/S0nAMlOcZCApMUsmhcHoPv1z4GVzumA3QphEubHoS9qxfAkoZGUtciwgyY924TzOprACXDQPltaSkZZu7DMlhWrG+zYh2Ed+yH0LfDUPfDNULo4AiEd/aB2txO6xaBnu0DUMjekkJ4xtHYzc67iGknrqXug+0tz5F2nuHNMPPoMmr6NmBZrCO2E9n8MYS+yxLTjhz+yzxQd/hHDJrmMffulLp+MZaAgQ2zicly+HrNPLudJzck4N7TDmd8HLAO1rXaCacPUpNlEPr0F1AbVonmkZy57oALEA47oW/9o8SYG3panzbPohfzxQcB2whv3UuMuSHUc5T4Q9A7jn9csSnZscNYTAy5ZaxzGiz7aSUx5ZZFA9ug7sjfxJRbwh2fkAOA3nH89xZvfCmWgMub7ieGXPNZPYz8eoAYcsuP2SvQduo6MeSafb+D2rBaPAi9+A/A9Th7Y3dLmJrxwvlDALkxiJzx/i+Ye6ETxnI5GMjepIY8EGnvEf8BJ5X8QuV/G/vXP0LNuKV7BljaP7SNGCuXLRdP2O3U91FDbgn1HCs9ADrP4AwwW7xxeOND1JBbdi2wAz93dg8xVi5fXBq223n9eOXDIPRNRhgCPKuIaa/rqXuoIbd8udQOfHS4nxgrl5//vGq3kxr8hxhyzaFRYQgYN/4/AP4Mgfl24JUMgc8nZAj4cRHc+oAdeCUXwXcuHrfb8e0iGOTb4OMXuuBfv2+Dvk2E9qhVmQgdvjzq+0TIp6mwAnr/CmLILU+deM/fqbD0D0PSPw5LnxCpXkps/uRNiXlNirYnApAUbfuw8qQoSuq0OEr6hRHpl8ZQUi+OoqRfHkdJ/YIESvpXZFBSvyRlSerX5CxJ/aKkJalflUVJ/7I0SurX5Ysl7QcTxZL6kxlLUn80ZUnqz+aKJe2Hk6Kk/XTWSVJ+PH07Bf3z+VvojdodyfsJBQAAAABJRU5ErkJggg==" InformativeScreenshot="11c92c1854ec72cf4d9b10619bb43e30.jpg" Reference="-lkftkSxq0unu2CwGjrB3g/_bu3cpLR2Em7BzwzxO71Ww" Selector="&lt;html app='chrome.exe' title='Letterboxd • Social film discovery.' /&gt;" Url="https://letterboxd.com/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>
